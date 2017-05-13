@@ -1,0 +1,45 @@
+/* Globals */
+
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'inconsolata';
+	src: local('inconsolata'), url('assets/inconsolata.woff') format('woff');
+	unicode-range: U+000-5FF;
+}
+
+body {
+	background-color: #0a1951;
+}
+
+/* Header Top */
+
+.header {
+	background-image: url('assets/bg+.png');
+	background-size: cover;
+	height: 100vh;
+	padding: 40px;
+}
+
+.top {
+	display: flex;
+}
+
+.top__logo {
+	flex: 1;
+}
+
+.list-social {
+	flex: 2;
+	list-style: none;
+	text-align: right;
+}
+
+.list-social__item {
+	display: inline-block;
+	padding: 0 8px;
+}
