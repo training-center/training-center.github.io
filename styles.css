@@ -14,6 +14,7 @@ html {
 
 body {
 	background-color: #0a1951;
+	font-family: "inconsolata";
 }
 
 /* Header Top */
@@ -42,4 +43,57 @@ body {
 .list-social__item {
 	display: inline-block;
 	padding: 0 8px;
+}
+
+/* Hero */
+
+.hero {
+	display: flex;
+	color: white;
+	margin-top: 20px;
+	justify-content: center;
+}
+
+.hero__titulo {
+	max-width: 400px;
+	font-size: 24px;
+}
+
+.hero__titulo span {
+	color: tomato;
+	font-size: 4.3rem;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 4px;
+}
+
+.hero__descricao {
+	margin-top: 1rem;
+	max-width: 400px;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+}
+
+.hero__btn {
+	display: block;
+	width: 200px;
+	background-color: tomato;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 1px 2px tomato;
+	padding: 10px;
+  text-align: center;
+	text-decoration: none;
+	align-self: flex-end;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
