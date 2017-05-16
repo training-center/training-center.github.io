@@ -41,10 +41,11 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-left: 32px;
 }
 
 .list-social__item {
-	padding: 0 8px;
+	padding: 8px 4px;
 }
 
 /*Titulo e sobre o projeto*/
