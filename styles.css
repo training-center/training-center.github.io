@@ -35,13 +35,15 @@ body {
 }
 
 .list-social {
+	max-width: 164px;
 	flex: 2;
 	list-style: none;
-	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .list-social__item {
-	display: inline-block;
 	padding: 0 8px;
 }
 
@@ -58,7 +60,6 @@ body {
 @media (min-width: 640px) {
 	.sobre {
 		flex-direction: row;
-		
 	}
 }
 
