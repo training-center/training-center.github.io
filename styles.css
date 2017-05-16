@@ -1,15 +1,15 @@
 /* Globals */
+@font-face {
+	font-family: 'inconsolata';
+	src: local('inconsolata'), url('assets/inconsolata.woff') format('woff');
+	unicode-range: U+000-5FF;
+}
+
 
 html {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-
-@font-face {
-	font-family: 'inconsolata';
-	src: local('inconsolata'), url('assets/inconsolata.woff') format('woff');
-	unicode-range: U+000-5FF;
 }
 
 body {
@@ -42,4 +42,62 @@ body {
 .list-social__item {
 	display: inline-block;
 	padding: 0 8px;
+}
+
+/*Titulo e sobre o projeto*/
+
+.sobre {
+padding: 40px 120px;
+display: flex;
+flex-direction: row;
+font-family: inconsolata;
+color: #fff
+}
+
+/*Titulo*/
+
+.titulo {
+	flex: 1;
+	text-align: left;
+}
+
+.titulo__sobre,
+.titulo__sobre--tc {
+	margin: 0;
+}
+
+.titulo__sobre--tc {
+	font-size: 42pt;
+	letter-spacing: 2px;
+	color: #d33837;
+}
+
+.titulo__sobre {
+	font-size: 16pt;
+}
+
+/*Sobre*/
+
+.descricao {
+	flex: 1;
+	text-align: right;
+}
+
+.descricao__projeto--btn {
+	padding: 10px 50px;
+	border-radius: 5px;
+	border: none;
+	background-color: #d33837;
+	color: #fff;
+	font-family: inconsolata;
+	font-size: 11pt;
+	box-shadow: 0 0 10px #d33837;
+	cursor: pointer;
+	transition-duration: .3s
+}
+
+.descricao__projeto--btn:hover {
+	background-color: #fff;
+	color: #d33837;
+	transition-duration: .3s
 }
