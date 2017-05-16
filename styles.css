@@ -61,6 +61,7 @@ body {
 @media (min-width: 640px) {
 	.sobre {
 		flex-direction: row;
+		padding: 40px 120px;
 	}
 }
 
