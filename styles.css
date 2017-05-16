@@ -14,6 +14,7 @@ html {
 
 body {
 	background-color: #0a1951;
+	margin: 0;
 }
 
 /* Header Top */
@@ -47,11 +48,18 @@ body {
 /*Titulo e sobre o projeto*/
 
 .sobre {
-padding: 40px 120px;
-display: flex;
-flex-direction: row;
-font-family: inconsolata;
-color: #fff
+	padding: 40px 0;
+	display: flex;
+	flex-direction: column;
+	font-family: inconsolata;
+	color: #fff
+}
+
+@media (min-width: 640px) {
+	.sobre {
+		flex-direction: row;
+		
+	}
 }
 
 /*Titulo*/
