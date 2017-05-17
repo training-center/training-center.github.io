@@ -10,3 +10,6 @@
 </ul>
 
 Leia nossas [guidelines de contribuição](CONTRIBUTING.md) para que possamos esclarecer quaiquer dúvidas :)
+
+## Licença
+Código licenciado sob uma [MIT-style License](LICENSE).
