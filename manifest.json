@@ -1,7 +1,7 @@
 {
   "name": "Training Center",
   "description": "Connecting people who want to learn or teach software development",
-  "short_name": "TC",
+  "short_name": "Training Center",
   "start_url": "/index.html",
   "display": "fullscreen",
   "orientation": "landscape",
