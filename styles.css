@@ -14,6 +14,7 @@ html {
 
 body {
 	background-color: #0a1951;
+	margin: 0;
 }
 
 /* Header Top */
@@ -34,24 +35,44 @@ body {
 }
 
 .list-social {
+	max-width: 164px;
 	flex: 2;
 	list-style: none;
-	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 32px;
 }
 
 .list-social__item {
-	display: inline-block;
-	padding: 0 8px;
+	padding: 8px 4px;
 }
 
 /*Titulo e sobre o projeto*/
 
 .sobre {
-padding: 40px 120px;
-display: flex;
-flex-direction: row;
-font-family: inconsolata;
-color: #fff
+	padding: 40px 0;
+	display: flex;
+	flex-direction: column;
+	font-family: inconsolata;
+	color: #fff
+}
+
+@media (min-width: 640px) {
+	.sobre {
+		padding: 40px 60px;
+	}
+}
+@media (min-width: 880px) {
+	.sobre {
+		padding: 40px 80px;
+		flex-direction: row;
+	}
+}
+@media (min-width: 960px) {
+	.sobre {
+		padding: 40px 120px;
+	}
 }
 
 /*Titulo*/
@@ -59,6 +80,7 @@ color: #fff
 .titulo {
 	flex: 1;
 	text-align: left;
+	margin-bottom: 25px;
 }
 
 .titulo__sobre,
@@ -70,6 +92,8 @@ color: #fff
 	font-size: 42pt;
 	letter-spacing: 2px;
 	color: #d33837;
+	line-height: 100%;
+	margin-top: 10px;
 }
 
 .titulo__sobre {
@@ -93,7 +117,8 @@ color: #fff
 	font-size: 11pt;
 	box-shadow: 0 0 10px #d33837;
 	cursor: pointer;
-	transition-duration: .3s
+	transition-duration: .3s;
+	margin-top: 20px;
 }
 
 .descricao__projeto--btn:hover {
