@@ -14,6 +14,7 @@ html {
 
 body {
 	background-color: #0a1951;
+	font-family: "inconsolata";
 }
 
 /* Header Top */
@@ -44,60 +45,56 @@ body {
 	padding: 0 8px;
 }
 
-/*Titulo e sobre o projeto*/
+/* Hero */
 
-.sobre {
-padding: 40px 120px;
-display: flex;
-flex-direction: row;
-font-family: inconsolata;
-color: #fff
+.hero {
+	display: flex;
+	color: white;
+	margin-top: 20px;
+	justify-content: center;
 }
 
-/*Titulo*/
-
-.titulo {
-	flex: 1;
-	text-align: left;
+.hero__titulo {
+	max-width: 400px;
+	font-size: 24px;
 }
 
-.titulo__sobre,
-.titulo__sobre--tc {
-	margin: 0;
+.hero__titulo span {
+	color: tomato;
+	font-size: 4.3rem;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 4px;
 }
 
-.titulo__sobre--tc {
-	font-size: 42pt;
-	letter-spacing: 2px;
-	color: #d33837;
-}
-
-.titulo__sobre {
-	font-size: 16pt;
-}
-
-/*Sobre*/
-
-.descricao {
-	flex: 1;
+.hero__descricao {
+	margin-top: 1rem;
+	max-width: 400px;
 	text-align: right;
+	display: flex;
+	flex-direction: column;
 }
 
-.descricao__projeto--btn {
-	padding: 10px 50px;
+.hero__btn {
+	display: block;
+	width: 200px;
+	background-color: tomato;
+	color: white;
 	border-radius: 5px;
-	border: none;
-	background-color: #d33837;
-	color: #fff;
-	font-family: inconsolata;
-	font-size: 11pt;
-	box-shadow: 0 0 10px #d33837;
-	cursor: pointer;
-	transition-duration: .3s
+	box-shadow: 0 0 1px 2px tomato;
+	padding: 10px;
+  text-align: center;
+	text-decoration: none;
+	align-self: flex-end;
+	margin-top: 10px;
 }
 
-.descricao__projeto--btn:hover {
-	background-color: #fff;
-	color: #d33837;
-	transition-duration: .3s
+@media screen and (max-width: 768px) {
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
+
