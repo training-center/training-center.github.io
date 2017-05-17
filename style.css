@@ -66,7 +66,7 @@ p {
 }
 
 .social-icons li:not(:first-child) {
-	margin-left: 32px;
+	margin-left: 24px;
 }
 
 .social-icons a {
