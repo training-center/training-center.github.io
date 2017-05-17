@@ -3,6 +3,8 @@
   "description": "Connecting people who want to learn or teach software development",
   "short_name": "Training Center",
   "start_url": "/index.html",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0C1624",
   "display": "fullscreen",
   "orientation": "landscape",
   "icons": [
@@ -39,6 +41,12 @@
     {
      "src": "\/assets/icons/android-icon-192x192.png",
      "sizes": "192x192",
+     "type": "image\/png",
+     "density": "4.0"
+    },
+    {
+     "src": "\/assets/icons/android-icon-512x512.png",
+     "sizes": "512x512",
      "type": "image\/png",
      "density": "4.0"
     }
