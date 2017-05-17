@@ -60,7 +60,17 @@ body {
 
 @media (min-width: 640px) {
 	.sobre {
+		padding: 40px 60px;
+	}
+}
+@media (min-width: 880px) {
+	.sobre {
+		padding: 40px 80px;
 		flex-direction: row;
+	}
+}
+@media (min-width: 960px) {
+	.sobre {
 		padding: 40px 120px;
 	}
 }
@@ -70,6 +80,7 @@ body {
 .titulo {
 	flex: 1;
 	text-align: left;
+	margin-bottom: 25px;
 }
 
 .titulo__sobre,
@@ -81,6 +92,8 @@ body {
 	font-size: 42pt;
 	letter-spacing: 2px;
 	color: #d33837;
+	line-height: 100%;
+	margin-top: 10px;
 }
 
 .titulo__sobre {
@@ -104,7 +117,8 @@ body {
 	font-size: 11pt;
 	box-shadow: 0 0 10px #d33837;
 	cursor: pointer;
-	transition-duration: .3s
+	transition-duration: .3s;
+	margin-top: 20px;
 }
 
 .descricao__projeto--btn:hover {
