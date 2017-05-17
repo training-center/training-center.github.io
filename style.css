@@ -1,3 +1,98 @@
 body {
+	margin: 0;
+	padding: 0;
 	background-color: #0C1624;
+}
+
+h1, p {
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;;
+}
+
+h1 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #F5A36A;
+}
+
+p {
+	font-size: 16px;
+	color: #FFF;
+	line-height: 1.5;
+}
+
+.logo-training-center {
+	width: 200px;
+	margin: 30px auto 0;
+}
+
+.logo-training-center svg {
+	width: 100%;
+	height: auto;
+}
+
+.page-content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.page-footer,
+.page-header {
+	overflow: hidden;
+	width: 100%;
+}
+
+.social-icons {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.social-icons li {
+	display: inline-block;
+}
+
+.social-icons li:not(:first-child) {
+	margin-left: 32px;
+}
+
+.social-icons a:hover svg path,
+.social-icons a:hover svg polyline,
+.social-icons a:hover svg rect {
+	fill: #ED684E;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	.logo-training-center {
+		width: 120px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 50px;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	h1, p {
+		max-width: 720px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	h1,
+	p {
+		max-width: 900px
+	}
 }
