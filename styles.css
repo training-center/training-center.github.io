@@ -21,7 +21,7 @@ body {
 .header {
 	background-image: url('assets/bg+.png');
 	background-size: cover;
-	height: 100vh;
+	height: 100%;
 	padding: 40px;
 }
 
@@ -44,46 +44,47 @@ body {
 	padding: 0 8px;
 }
 
-/*Titulo e sobre o projeto*/
-
-.sobre {
-padding: 40px 120px;
-display: flex;
-flex-direction: row;
-font-family: inconsolata;
-color: #fff
+/*Definição de valores para formatação de textos e botões*/
+.texto {
+	font-family: inconsolata;
 }
 
-/*Titulo*/
-
-.titulo {
-	flex: 1;
-	text-align: left;
+.texto--claro {
+	color: #fff
 }
 
-.titulo__sobre,
-.titulo__sobre--tc {
-	margin: 0;
+.texto--escuro {
+	color: #0a1951
 }
 
-.titulo__sobre--tc {
-	font-size: 42pt;
-	letter-spacing: 2px;
-	color: #d33837;
-}
-
-.titulo__sobre {
-	font-size: 16pt;
-}
-
-/*Sobre*/
-
-.descricao {
-	flex: 1;
+.texto--direito {
 	text-align: right;
 }
 
-.descricao__projeto--btn {
+.texto--esquerdo {
+	text-align: left;
+}
+
+.texto--titulo {
+	font-size: 42pt;
+	letter-spacing: 2px;
+	color: #d33837;
+	margin: 0;
+}
+
+.texto--subtitulo {
+	font-size: 38pt;
+	letter-spacing:  2px;
+	color: #d33837;
+	margin: 0;
+}
+
+.texto--pre {
+	font-size: 16pt;
+	margin: 0;
+}
+
+.btn {
 	padding: 10px 50px;
 	border-radius: 5px;
 	border: none;
@@ -96,8 +97,46 @@ color: #fff
 	transition-duration: .3s
 }
 
-.descricao__projeto--btn:hover {
+.btn:hover {
 	background-color: #fff;
 	color: #d33837;
 	transition-duration: .3s
+}
+
+
+/*Titulo e sobre o projeto*/
+
+.sobre {
+padding: 40px 120px;
+display: flex;
+flex-direction: row;
+}
+
+/*Titulo*/
+
+.titulo {
+	flex: 1;
+}
+
+.titulo__sobre,
+.titulo__sobre--tc {
+	margin: 0;
+}
+
+/*Sobre*/
+
+.descricao {
+	flex: 1;
+}
+
+/*Formatação do corpo*/
+.corpo {
+	width: 80%;
+	margin: 0 10%;
+	padding: 40px 5%;
+	background-color: #ededed;
+	box-sizing: border-box;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row
 }
