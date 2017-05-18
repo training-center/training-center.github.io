@@ -107,9 +107,9 @@ body {
 /*Titulo e sobre o projeto*/
 
 .sobre {
-padding: 40px 120px;
+padding: 40px 10%;
 display: flex;
-flex-direction: row;
+flex-direction: column;;
 }
 
 @media (min-width: 640px) {
