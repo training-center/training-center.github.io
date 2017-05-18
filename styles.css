@@ -112,6 +112,23 @@ display: flex;
 flex-direction: row;
 }
 
+@media (min-width: 640px) {
+	.sobre {
+		padding: 40px 60px;
+	}
+}
+@media (min-width: 880px) {
+	.sobre {
+		padding: 40px 80px;
+		flex-direction: row;
+	}
+}
+@media (min-width: 960px) {
+	.sobre {
+		padding: 40px 120px;
+	}
+}
+
 /*Titulo*/
 
 .titulo {
