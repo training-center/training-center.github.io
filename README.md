@@ -8,3 +8,8 @@
   <li><a href="https://twitter.com/trainingcentr" target="_blank" title="Siga-nos no Twitter">Siga-nos no Twitter</a></li>
   <li><a href="https://medium.com/trainingcenter" target="_blank" title="Leia nossos artigos no Medium">Leia nossos artigos no Medium</a></li>
 </ul>
+
+Leia nossas [guidelines de contribuição](CONTRIBUTING.md) para que possamos esclarecer quaiquer dúvidas :)
+
+## Licença
+Código licenciado sob uma [MIT-style License](LICENSE).
