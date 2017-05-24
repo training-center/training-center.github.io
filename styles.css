@@ -24,6 +24,7 @@ body {
 	background-size: cover;
 	height: 100%;
 	padding: 40px;
+	box-sizing: border-box;
 }
 
 .top {
@@ -45,12 +46,17 @@ body {
 	padding: 0 8px;
 }
 
+/*Efeito hover nos links do menu*/
+.list-social__ico:hover{
+	opacity: 0.8;
+	transition-duration: .2s
+}
+
 /*Definição de valores para formatação de botões*/
 
 .btn {
 	padding: 9px 49px;
 	border-radius: 5px;
-	border: none;
 	background-color: #d33837;
 	color: #fff;
 	font-family: inconsolata;
@@ -70,6 +76,8 @@ body {
 
 
 /*Titulo e sobre o projeto*/
+
+/*Definição da área sobre*/
 
 .about {
 padding: 40px 10%;
@@ -103,6 +111,8 @@ flex-direction: column;;
 	font-size: 42pt
 }
 
+/*Tamanho da área do título*/
+
 .about__heading {
 	flex: 1;
 }
@@ -112,10 +122,19 @@ flex-direction: column;;
 	margin: 0;
 }
 
+/*Definição do tamanho da área do texto sobre*/
+
 .about__description {
 	flex: 1;
 	color: #fff;
 	text-align: right;
+}
+
+/*Ajuste dos textos pequenos em cima de títulos*/
+
+.about__description,
+.content {
+	font-size: 15pt
 }
 .about__headline,
 .study__healine,
@@ -138,25 +157,39 @@ flex-direction: column;;
 	box-sizing: border-box;
 	border-radius: 10px;
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
 }
 
 @media (min-width: 640px) {
 	.content {
 		width: 90%;
-		margin: 0 5%
+		margin: 0 5%;
+	}
+
+	.about__description,
+	.content,
+	.footer__partners {
+		font-size: 14pt
 	}
 }
 @media (min-width: 880px) {
 	.content {
 		width: 80%;
-		margin: 0 10%
+		margin: 0 10%;
+	}
+
+	.about__description,
+	.content,
+	.footer__partners  {
+		font-size: 13pt
 	}
 }
 @media (min-width: 960px) {
-	.content {
-		width: 80%;
-		margin: 0 10%
+
+	.about__description,
+	.content,
+	.footer__partners  {
+		font-size: 12pt
 	}
 }
 
@@ -164,6 +197,8 @@ flex-direction: column;;
 .partners {
 	text-align: right;
 }
+
+/*Definindo como itens irão se alinhar*/
 
 .study,
 .mentoring,
@@ -231,27 +266,65 @@ flex-direction: column;;
 	text-align: left;
 }
 
-.footer {
-padding: 40px 10%;
+/*Estilização do rodapé*/
+
+.footer,
+.footer__partners {
 display: flex;
 flex-direction: column;
+font-size: 15pt;
+}
+
+.footer__partners {
+	text-align: right;
+	color: #fff;
+}
+
+.footer {
+	box-sizing: border-box;
+	width: calc(100vw - 25vw);
+	margin: 25px 12.5%;
 }
 
 @media (min-width: 640px) {
-	.footer {
-		padding: 40px 60px;
-		flex-direction: row;
-		justify-content: space-between;
+
+	.footer__partners {
+		font-size: 14pt;
 	}
 }
 @media (min-width: 880px) {
 	.footer {
-		padding: 40px 80px;
+		flex-direction: row;
+	}
+
+	.footer__partners {
+		font-size: 13pt
 	}
 }
 @media (min-width: 960px) {
 	.footer {
-		padding: 40px 120px;
+		justify-content: space-between;
+	}
+
+	.footer,
+	.footer__partners{
+		display: flex;
+		flex-direction: row;
+		font-size: 12pt;
+	}
+
+	.footer__partners--left {
+		margin-right: 20px
 	}
 }
-é
+
+.partner {
+	border-bottom: 2px solid #fff;
+}
+
+/*Estilização dos textos destaque de parceiros*/
+
+.partner__discount--percentage,
+.partner__discount--code {
+	color: #d33837;
+}
