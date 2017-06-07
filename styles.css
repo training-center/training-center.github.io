@@ -322,6 +322,10 @@ font-size: 15pt;
 	border-bottom: 2px solid #fff;
 }
 
+.partner:last-child {
+    border: none
+}
+
 /*Estilização dos textos destaque de parceiros*/
 
 .partner__discount--percentage,
