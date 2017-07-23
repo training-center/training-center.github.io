@@ -23,8 +23,14 @@ body {
 	background-image: url('assets/bg+.png');
 	background-size: cover;
 	height: 100%;
-	padding: 40px;
+	padding: 10px;
 	box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+	.header {
+		padding: 40px;
+	}
 }
 
 .top {
@@ -43,7 +49,13 @@ body {
 
 .list-social__item {
 	display: inline-block;
-	padding: 0 8px;
+	padding: 0 4px;
+}
+
+@media (min-width: 640px) {
+	.list-social__item {
+		padding: 0 8px;
+	}
 }
 
 /*Efeito hover nos links do menu*/
