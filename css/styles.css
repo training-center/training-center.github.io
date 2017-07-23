@@ -1,7 +1,7 @@
 /* Globals */
 @font-face {
 	font-family: 'inconsolata';
-	src: local('inconsolata'), url('assets/inconsolata.woff') format('woff');
+	src: local('inconsolata'), url('/assets/inconsolata.woff') format('woff');
 	unicode-range: U+000-5FF;
 }
 
@@ -20,7 +20,7 @@ body {
 /* Header Top */
 
 .header {
-	background-image: url('assets/bg+.png');
+	background-image: url('/assets/bg+.png');
 	background-size: cover;
 	height: 100%;
 	padding: 10px;
