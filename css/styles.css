@@ -292,6 +292,15 @@ font-size: 15pt;
 	color: #fff;
 }
 
+.footer__partners a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer__partners a:hover {
+	text-decoration: underline;
+}
+
 .footer {
 	box-sizing: border-box;
 	width: calc(100vw - 25vw);
