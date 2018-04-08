@@ -16,8 +16,6 @@ body
 //  Header Top 
 
 .header
-	background-image: url('/assets/images/bg+.png')
-	background-size: cover
 	height: 100%
 	padding: 10px
 	box-sizing: border-box
@@ -25,6 +23,8 @@ body
 @media (min-width: 640px)
 	.header
 		padding: 40px
+		max-width: 85%
+		margin: 0 auto
 
 .top
 	display: flex
@@ -185,6 +185,7 @@ body
 	.mentoring,
 	.footer
 		flex-direction: row
+		flex-wrap: wrap
 
 .study__image,
 .mentoring__image
@@ -256,9 +257,6 @@ body
 		font-size: 14pt
 
 @media (min-width: 880px)
-	.footer
-		flex-direction: row
-
 	.footer__partners
 		font-size: 13pt
 
