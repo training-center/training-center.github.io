@@ -4,7 +4,7 @@ title: Training Center - Uma comunidade para iniciantes em programação
 description: Mentoria e grupos de estudos para iniciantes em desenvolvimento de software. Uma comunidade para iniciantes em programação.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site e.g. https://woliveiras.com.br
-language: "" # language to set into html tag, default is en
+language: "pt-br" # language to set into html tag, default is en
 paginate: 5 # Number of posts on each page
 paginate_path: "/page/:num" # links format for pagination
 date_format: "%b %-d, %Y"  # dateformat of reading list, post date, and more
