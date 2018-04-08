@@ -1,0 +1,71 @@
+# Site settings
+
+title: Training Center - Uma comunidade para iniciantes em programação
+description: Mentoria e grupos de estudos para iniciantes em desenvolvimento de software. Uma comunidade para iniciantes em programação.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site e.g. https://woliveiras.com.br
+language: "pt-br" # language to set into html tag, default is en
+paginate: 5 # Number of posts on each page
+paginate_path: "/page/:num" # links format for pagination
+date_format: "%b %-d, %Y"  # dateformat of reading list, post date, and more
+permalink: /:title/ # use to url friendly
+timezone:  # timezone to show in yout sire
+display-author-front-page: # True if you need show author name and site on home page
+display-author-post-page: true # Very usual for guest posts and the infos of author are writen in header of post.md, by default show infos of user settings
+analytics: UA-111511725-1
+
+# Useful for translating into other languages.
+
+var_on_the_web: On the web
+var_read: Continue...
+var_newer: Newers
+var_older: Olders
+var_next_post: Next
+var_previous_post: Previous
+var_less_than_a_minute_read: < 1 min read
+var_min_read: min read # Text after reading time. Example: 5 min read.
+var_post_by: Writed by
+var_guest_post_by: Guest post by
+var_your_email: Your mail
+var_your_message: Your message
+var_page_indicator: Page
+var_page_indicator_separator: of
+
+# User settings
+
+author: Training Center # put your name or a name of principal author of site/blog
+email: contact.trainingcentr@gmail.com
+twitter_username: trainingcentr
+github_username:  training-center
+# disqus_shortname: dunders-website
+
+# Navigation menu
+links:
+  - title: Home
+    url: /
+  - title: About Me
+    url: /about
+  - title: Archive
+    url: /archive
+  - title: Contact
+    url: /contact
+  - title: Categories
+    url: /categories
+
+# Build settings
+
+markdown: kramdown
+highlighter: rouge
+sitemap: true # Generate sitemap.xml
+feed:
+  path: atom.xml
+sass:
+  style: compressed
+  
+## For more settings: https://jekyllrb.com/docs/configuration/
+
+# exclude files if no need build
+exclude: ['package.json', 'node_modules', 'README.md', 'LICENSE']
+
+# Gems
+gems: [jekyll-paginate, jekyll-sitemap, jekyll-feed]

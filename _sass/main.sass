@@ -1,0 +1,286 @@
+//  Globals 
+@font-face
+	font-family: 'inconsolata'
+	src: local('inconsolata'), url('/assets/fonts/inconsolata.woff') format('woff')
+	unicode-range: U+000-5FF
+
+html
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+body
+	background-color: #0a1951
+	font-family: inconsolata
+
+//  Header Top 
+
+.header
+	height: 100%
+	padding: 10px
+	box-sizing: border-box
+
+@media (min-width: 640px)
+	.header
+		padding: 40px
+		max-width: 85%
+		margin: 0 auto
+
+.top
+	display: flex
+
+.top__logo
+	flex: 1
+
+.list-social
+	flex: 2
+	list-style: none
+	text-align: right
+
+.list-social__item
+	display: inline-block
+	padding: 0 4px
+
+@media (min-width: 640px)
+	.list-social__item
+		padding: 0 8px
+
+// Efeito hover nos links do menu
+.list-social__ico:hover
+	opacity: 0.8
+	transition-duration: .2s
+
+// Definição de valores para formatação de botões
+
+.btn
+	padding: 9px 49px
+	border-radius: 5px
+	background-color: #d33837
+	color: #fff
+	font-family: inconsolata
+	font-size: 11pt
+	cursor: pointer
+	transition-duration: .3s
+	border: 1px solid #d33837
+	text-decoration: none
+
+.btn:hover
+	background-color: #fff
+	color: #d33837
+	border: 1px solid #d33837
+	transition-duration: .3s
+
+
+// Titulo e sobre o projeto
+
+// Definição da área sobre
+
+.about
+	padding: 40px 10%
+	display: flex
+	flex-direction: column
+
+@media (min-width: 640px)
+	.about
+		padding: 40px 60px
+
+@media (min-width: 880px)
+	.about
+		padding: 40px 80px
+		flex-direction: row
+
+@media (min-width: 960px)
+	.about
+		padding: 40px 120px
+
+.about__title
+	letter-spacing: 2px
+	color: #d33837
+	margin: 0
+	text-align: left
+	font-size: 42pt
+
+// Tamanho da área do título
+
+.about__heading
+	flex: 1
+
+.about__headline,
+.about__title
+	margin: 0
+
+// Definição do tamanho da área do texto sobre
+
+.about__description
+	flex: 1
+	color: #fff
+	text-align: right
+
+// Ajuste dos textos pequenos em cima de títulos
+
+.about__description,
+.content
+	font-size: 15pt
+.about__headline,
+.study__healine,
+.footer__headline
+	font-size: 16pt
+	margin: 0
+.about__headline,
+.footer__headline
+	color: #fff
+
+// Formatação do corpo
+.content
+	width: 100%
+	margin: 0
+	padding: 40px 5%
+	background-color: #ededed
+	color: #0a1951
+	box-sizing: border-box
+	border-radius: 10px
+	display: flex
+	flex-direction: column
+
+@media (min-width: 640px)
+	.content
+		width: 90%
+		margin: 0 5%
+
+	.about__description,
+	.content,
+	.footer__partners
+		font-size: 14pt
+
+@media (min-width: 880px)
+	.content
+		width: 80%
+		margin: 0 10%
+
+	.about__description,
+	.content,
+	.footer__partners 
+		font-size: 13pt
+
+@media (min-width: 960px)
+	.about__description,
+	.content,
+	.footer__partners 
+		font-size: 12pt
+
+.study,
+.partners
+	text-align: right
+
+// Definindo como itens irão se alinhar
+
+.study,
+.mentoring,
+.footer
+	display: flex
+	flex-direction: column
+
+@media screen and (min-width: 640px)
+	.study,
+	.mentoring,
+	.footer
+		flex-direction: row
+		flex-wrap: wrap
+
+.study__image,
+.mentoring__image
+	margin: 20px
+
+.study__image
+	width: 90%
+
+.mentoring__image
+	width: 90%
+
+@media screen and (min-width: 640px)
+	.study__image,
+	.mentoring__image
+		margin: auto 2%
+
+	.study__image
+		width: 40%
+
+	.mentoring__image
+		width: 40%
+		order: 1
+
+.study__heading,
+.mentoring__heading
+	flex: 1
+
+.study__title,
+.mentoring__title,
+.footer__title
+	font-size: 38pt
+	letter-spacing:  2px
+	color: #d33837
+	margin: 0
+
+// Estilização da parte de mentoria
+
+.mentoring
+	margin: 10% 0
+	text-align: left
+
+// Estilização do rodapé
+
+.footer,
+.footer__partners
+	display: flex
+	flex-direction: column
+	font-size: 15pt
+
+.footer__partners
+	text-align: right
+	color: #fff
+
+.footer__partners a
+	color: #fff
+	text-decoration: none
+
+.footer__partners a:hover
+	text-decoration: underline
+
+.footer
+	box-sizing: border-box
+	width: calc(100vw - 25vw)
+	margin: 25px 12.5%
+
+@media (min-width: 640px)
+
+	.footer__partners
+		font-size: 14pt
+
+@media (min-width: 880px)
+	.footer__partners
+		font-size: 13pt
+
+@media (min-width: 960px)
+	.footer
+		justify-content: space-between
+
+	.footer,
+	.footer__partners
+		display: flex
+		flex-direction: row
+		font-size: 12pt
+
+	.footer__partners--left
+		margin-right: 20px
+
+.partner
+	border-bottom: 2px solid #fff
+
+.partner:last-child
+	border: none
+
+// Estilização dos textos destaque de parceiros
+
+.partner__discount--percentage,
+.partner__discount--code
+	color: #d33837  
