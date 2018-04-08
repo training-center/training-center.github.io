@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<span><a href="{{ page.url }}#disqus_thread"></a></span>
+<div>
+  {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
+  {% endfor %}
+</div>
+
+  {% if site.display-author-post-page %}
+    {% if page.author.name %}
+      <small><em>{{ site.var_guest_post_by }}: {{ page.author.name }} <a href="{{ page.author.site }}" title="{{ page.author.name }} website" target="_blank">({{ page.author.site }})</a></em></small>
+    {% else %}
+      {% if site.author %}
+        <small><em>{{ site.var_post_by }}: {{ site.author }}</em></small>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+
+  {% if site.disqus_shortname %}
+    {% include comments.html %}
+  {% endif %}
