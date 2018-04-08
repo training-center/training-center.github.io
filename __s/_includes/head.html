@@ -1,9 +1,13 @@
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  {% if site.analytics %}
+    {% include analytics.html %}
+  {% endif %}
+
   <link rel="author" href="https://plus.google.com/{{ site.gplus_username }}?rel=author">
   <link rel="stylesheet" href="/css/styles.css">
   <meta name="twitter:card" content="summary_large_image">

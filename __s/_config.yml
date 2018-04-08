@@ -1,7 +1,7 @@
 # Site settings
 
-title: Dunders | A Starter Theme for Jekyll # put your blog title
-description: Faster to start a new Jekyll theme # put your description for your amazing blog
+title: Training Center - Uma comunidade para iniciantes em programação
+description: Mentoria e grupos de estudos para iniciantes em desenvolvimento de software. Uma comunidade para iniciantes em programação.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site e.g. https://woliveiras.com.br
 language: "" # language to set into html tag, default is en
@@ -12,6 +12,7 @@ permalink: /:title/ # use to url friendly
 timezone:  # timezone to show in yout sire
 display-author-front-page: # True if you need show author name and site on home page
 display-author-post-page: true # Very usual for guest posts and the infos of author are writen in header of post.md, by default show infos of user settings
+analytics: UA-111511725-1
 
 # Useful for translating into other languages.
 
