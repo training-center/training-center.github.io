@@ -20,6 +20,10 @@
         color: white
         font-weight: bold
         margin: 20px
+        max-width: 300px
+
+        @media (min-width: 520px)
+            margin-left: 0
     
     strong
         font-weight: bold
@@ -31,6 +35,14 @@
         margin-top: 10px
         margin-bottom: 10px
 
+        @media (min-width: 520px)
+            flex: 1
+
         img
             max-width: 65%
             max-height: 80px
+
+    &__win
+        @media (min-width: 520px)
+            display: flex
+            justify-content: space-around

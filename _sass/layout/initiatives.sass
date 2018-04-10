@@ -4,8 +4,21 @@
     border-bottom: 1px solid $blue
     padding-top: 30px
 
+    &__call
+        padding-bottom: 20px
+    
+    &__items
+
+        @media (min-width: 520px)
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+
     &__box
         padding-bottom: 45px
+        
+        @media (min-width: 520px)
+            width: 50%
 
         &__title
             font-weight: bold
