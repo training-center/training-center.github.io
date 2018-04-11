@@ -1,0 +1,48 @@
+.partners
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 30px
+    padding-bottom: 30px
+
+    &__title
+        font-weight: bold
+        padding-bottom: 20px
+        font-size: 1.8rem
+
+    &__button
+        display: block
+        text-align: center
+        background-color: #ec4a3b
+        border: none
+        border-radius: 2px
+        padding: 15px
+        color: white
+        font-weight: bold
+        margin: 20px
+        max-width: 300px
+
+        @media (min-width: 520px)
+            margin-left: 0
+    
+    strong
+        font-weight: bold
+
+    &__box
+        border: 1px solid $light
+        text-align: center
+        padding: 20px
+        margin-top: 10px
+        margin-bottom: 10px
+
+        @media (min-width: 520px)
+            flex: 1
+
+        img
+            max-width: 65%
+            max-height: 80px
+
+    &__win
+        @media (min-width: 520px)
+            display: flex
+            justify-content: space-around
