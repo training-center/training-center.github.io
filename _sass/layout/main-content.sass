@@ -2,19 +2,16 @@
     display: flex
     flex-direction: column
     text-align: center
-    padding-bottom: 40px
-    padding-top: 30px
-    border-bottom: 1px solid $blue
+    padding-bottom: 100px
+    padding-top: 100px
+    +theme-border(8px, $blue)
 
     @media (min-width: 800px)
         padding-bottom: 80px
         padding-top: 80px
 
     &__title
-        font-weight: bolder
-        font-size: 2.5rem
-        padding-bottom: 15px
-        text-transform: uppercase
+        +theme-title(2.5rem, 50px)
 
     &__text
         font-size: 1.2rem
