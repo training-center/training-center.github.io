@@ -1,12 +1,12 @@
 .initiatives
     display: flex
     flex-direction: column
-    border-bottom: 1px solid $blue
     padding-top: 30px
+    +theme-border(3px, $blue)
 
     &__call
         padding-bottom: 20px
-    
+
     &__items
 
         @media (min-width: 520px)
@@ -25,9 +25,7 @@
                 padding-right: 0
 
         &__title
-            font-weight: bold
-            padding-bottom: 20px
-            font-size: 1.8rem
+            +theme-title(1.8rem, 20px)
         
         &__link
             display: block

@@ -1,13 +1,11 @@
 .come
     display: flex
     flex-direction: column
-    border-bottom: 1px solid $blue
     padding-top: 30px
+    +theme-border(3px, $blue)
 
     &__title
-        font-weight: bold
-        padding-bottom: 20px
-        font-size: 1.8rem
+        +theme-title(1.8rem, 20px)
 
     &__box
         padding-bottom: 30px
