@@ -4,14 +4,18 @@
     text-align: center
     padding-bottom: 100px
     padding-top: 100px
-    +theme-border(8px, $blue)
+    background-color: $blue
+    color: white
 
     @media (min-width: 800px)
         padding-bottom: 80px
         padding-top: 80px
 
     &__title
-        +theme-title(2.5rem, 50px)
+        font-weight: bolder
+        padding-bottom: 50px
+        font-size: 2.5rem
+        text-transform: uppercase
 
     &__text
         font-size: 1.2rem
