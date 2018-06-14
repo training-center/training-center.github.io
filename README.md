@@ -1,7 +1,5 @@
 # Training Center site
 
-Esta comunidade **não possui meios de conseguir renda**.
-
 ## Sobre
 
 Este projeto é um site estático gerado automaticamente pelo [Jekyll](https://jekyllrb.com/), um gerador de páginas estáticas, para facilitar a configuração do site e das páginas e a manutenção do código.
