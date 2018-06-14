@@ -1,13 +1,5 @@
 # Training Center site
 
-Esta comunidade **não possui meios de conseguir renda**, porém, você pode doar mensalmente para nosso grupo através do [apoia.se](http://apoia.se/training-center) e garantir a continuação do funcionamento das nossas ferramentas. ;P
-
-<p align="center">
- <a href="http://apoia.se/training-center" title="Apoia.se do Training Center">
-  <img src="https://raw.githubusercontent.com/training-center/sobre/master/assets/btn-apoiar.png" alt="botão de apoio ao Training Center">
- </a>
-</p>
-
 ## Sobre
 
 Este projeto é um site estático gerado automaticamente pelo [Jekyll](https://jekyllrb.com/), um gerador de páginas estáticas, para facilitar a configuração do site e das páginas e a manutenção do código.
